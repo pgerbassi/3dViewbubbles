@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Poetsen One", sans-serif;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    touch-action:auto;
+}
+
+button{
+    font-size: 65px;
+    width: 320px;
+    height: 320px;
+    outline: none;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 24px;
+    color: rgba(7, 193, 206, 0.993);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active {
+    color: antiquewhite;
+    background-color: aquamarine;
+    border: 6px solid rgb(0, 255, 191);
+}
+
+.section {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;    
+}
+.section .submitBtn {
+    background: rgba(228, 226, 226, 0.521);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.15),
+    25px 35px 20px rgba(0, 0, 0, 0.15),
+    25px 30px 30px rgba(0, 0, 0, 0.15),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.8);
+    transition: 0.5s ease-in-out;
+}
+
+.section .submitBtn:nth-child(1) {
+    border-radius: 36% 64% 58% 42% / 61% 60% 40% 39% ;
+}
+
+.section .submitBtn:nth-child(2) {
+    border-radius: 34% 66% 13% 87% / 74% 20% 80% 26% ;
+}
+
+.section .submitBtn:nth-child(3) {
+    border-radius: 30% 70% 39% 61% / 49% 29% 71% 51% ;
+}
+
+.section .submitBtn:hover{
+    border-radius: 50%;
+    color: blanchedalmond;
+    background: rgba(7, 193, 206, 0.6);
+}
+
+.section .submitBtn::before{
+    content: '';
+    position:relative;
+    top: -90px;
+    left: 18px;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.section .submitBtn::after{
+    content: '';
+    position:relative;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    opacity: 0.9;
+}
+/*
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family:sans-serif;
+    overflow: hidden;
+}
+.section{
+    box-sizing: content-box;
+    position: absolute;
+    display: flex;
+    padding-block: 30;
+    background: fixed;
+    background: padding-box;
+    background-color: brown;
+    z-index: 4;
+    
+}
+
+
+
+.title {
+    font-family: "Poetsen One", sans-serif;
+    color: rgb(127, 255, 212);
+    position: absolute;
+    font-size: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px;
+    align-content: center;
+    justify-items: center;
+    margin: 30vh;
+    background: none;
+    z-index: 3;
+    touch-action: none;
+}
+
+.submitBtn {
+    font-family: 'Poetsen One', sans-serif;
+    box-sizing: content-box;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    font-size: 30px;
+    display: flex;
+    color: rgb(0, 255, 149);
+    background: none;
+    border-radius: 10px;
+    border: 0ch;
+    margin-top: 45vh;
+    margin-left: 41vh;
+    z-index: 3;
+}
+
+.submitBtn:hover{
+    position: absolute;
+    padding: 0 1vh ;
+    background: rgb(0, 255, 149);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}*/
